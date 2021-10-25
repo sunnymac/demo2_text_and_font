@@ -31,14 +31,39 @@ class MyApp extends StatelessWidget {
                 letterSpacing: 2.0,
               ),
             ),
-            Text("Text using Google Fonts",
-                style: GoogleFonts.robotoMono(
-                  fontSize: 25,
-                  fontWeight: FontWeight.bold,
-                  fontStyle: FontStyle.italic,
-                  color: Colors.red,
-                  letterSpacing: 2.0,
-                )),
+            Text(
+              "Text using Google Fonts",
+              style: GoogleFonts.robotoMono(
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+                fontStyle: FontStyle.italic,
+                color: Colors.purple,
+                letterSpacing: 2.0,
+              ),
+            ),
+            SizedBox(
+              height: 20.0,
+            ),
+            Text.rich(
+              TextSpan(
+                  text: "Rich Text 1  ",
+                  style: GoogleFonts.anton(
+                    fontSize: 20,
+                    color: Colors.red,
+                  ),
+                  children: [
+                    TextSpan(
+                      text: "Rich Text 2",
+                      style: GoogleFonts.anton(
+                        fontSize: 20,
+                        color: Colors.cyan,
+                      ),
+                    ),
+                    TextSpan(
+                      text: " Rich Text 3",
+                    ),
+                  ]),
+            )
           ],
         )),
       ),
