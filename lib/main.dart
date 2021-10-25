@@ -9,9 +9,36 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
-        body: Text("Dummy"),
+        body: Center(
+            child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              "Text Change using Asset Fonts",
+              style: TextStyle(
+                fontFamily: "Festive",
+                fontSize: 30,
+                fontWeight: FontWeight.w100,
+                fontStyle: FontStyle.italic,
+                color: Colors.red,
+                letterSpacing: 2.0,
+              ),
+            ),
+            Text(
+              "Text Change using Asset Fonts",
+              style: TextStyle(
+                fontFamily: "Festive",
+                fontSize: 30,
+                fontWeight: FontWeight.w100,
+                fontStyle: FontStyle.italic,
+                color: Colors.red,
+                letterSpacing: 2.0,
+              ),
+            ),
+          ],
+        )),
       ),
     );
   }
